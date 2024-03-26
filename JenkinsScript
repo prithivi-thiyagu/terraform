@@ -1,0 +1,10 @@
+node{
+stage('Plan'){
+dir('jenkins'){
+sh 'terraform plan'
+}
+}
+stage('Apply'){
+sh 'terraform ${action} -auto-approve
+}
+}
