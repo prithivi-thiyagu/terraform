@@ -1,5 +1,5 @@
 node{
-    stage("clone){
+    stage('clone'){
         git branch: 'main', url: 'https://github.com/prithivi-thiyagu/terraform.git'
     }
 stage('Plan'){
