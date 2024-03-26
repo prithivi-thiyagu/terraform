@@ -4,6 +4,7 @@ node{
     }
 stage('Plan'){
 dir('jenkins'){
+sh 'terraform init'    
 sh 'terraform plan'
 }
 }
