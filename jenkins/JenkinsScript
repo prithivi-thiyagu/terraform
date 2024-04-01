@@ -12,7 +12,7 @@ stage('Apply'){dir('jenkins'){
 sh 'terraform ${action} -auto-approve'
 }}
 stage('Apply'){
-sh 'echo done'
+sh 'echo done123'
 }
 }
 
