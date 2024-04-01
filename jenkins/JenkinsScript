@@ -10,9 +10,9 @@ sh 'terraform plan'
 }
 stage('Apply'){dir('jenkins'){
 sh 'terraform ${action} -auto-approve'
-}
-stage('Apply'){dir('jenkins'){
+}}
+stage('Apply'){
 sh 'echo done'
 }
 }
-}
+
